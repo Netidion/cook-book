@@ -8,11 +8,11 @@ import {Ingredient} from "../models/ingredient.model";
 })
 export class ShoppingListComponent implements OnInit {
   ingredients: Ingredient[] = [
-    new Ingredient("Eggs", 2),
-    new Ingredient("Milk", 1),
-    new Ingredient("Onions", 1),
-    new Ingredient("Zucchini", 1),
-    new Ingredient("Corn", 1),
+    new Ingredient("Eggs", 2, "pieces"),
+    new Ingredient("Milk", 100, "gr"),
+    new Ingredient("Onions", 1, "pieces"),
+    new Ingredient("Zucchini", 5,"pieces"),
+    new Ingredient("Corn", 1, "pieces"),
   ];
 
   constructor() { }
