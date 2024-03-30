@@ -4,5 +4,11 @@
   </div>
 </div>
 <hr>
-<p>The list</p>
+<ul class="list-group">
+  @for (ingredient of ingredients; track $index){
+    <a class="list-group-item" style="cursor: pointer">
+      {{ ingredient.name }} ({{ ingredient.amount}})
+    </a>
+  }
+</ul>
 
